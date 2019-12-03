@@ -8,15 +8,35 @@ import ua.treining.model.entity.coffee.Coffee;
  */
 public class CoffeeProduct {
 
+    private double price;
+    private double productMass;
     private Packaging packaging;
     private Coffee coffee;
 
     public CoffeeProduct() {
     }
 
-    public CoffeeProduct(Packaging packaging, Coffee coffee) {
+    public CoffeeProduct(double price, double productMass, Packaging packaging, Coffee coffee) {
+        this.price = price;
+        this.productMass = productMass;
         this.packaging = packaging;
         this.coffee = coffee;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getProductMass() {
+        return productMass;
+    }
+
+    public void setProductMass(double productMass) {
+        this.productMass = productMass;
     }
 
     public Packaging getPackaging() {
@@ -38,7 +58,9 @@ public class CoffeeProduct {
     @Override
     public String toString() {
         return "CoffeeProduct{" +
-                "packaging=" + packaging +
+                "price=" + price +
+                ", productMass=" + productMass +
+                ", packaging=" + packaging +
                 ", coffee=" + coffee +
                 '}';
     }
