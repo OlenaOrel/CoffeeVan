@@ -16,11 +16,15 @@ public class CoffeeProduct {
     public CoffeeProduct() {
     }
 
-    public CoffeeProduct(double price, double productMass, Packaging packaging, Coffee coffee) {
+    public CoffeeProduct(double price, Packaging packaging, Coffee coffee) {
         this.price = price;
-        this.productMass = productMass;
+        this.productMass = calculateProductMass();
         this.packaging = packaging;
         this.coffee = coffee;
+    }
+
+    public double calculateProductMass(){
+        return packaging.getMass() + coffee.getMass();
     }
 
     public double getPrice() {
@@ -33,10 +37,6 @@ public class CoffeeProduct {
 
     public double getProductMass() {
         return productMass;
-    }
-
-    public void setProductMass(double productMass) {
-        this.productMass = productMass;
     }
 
     public Packaging getPackaging() {
