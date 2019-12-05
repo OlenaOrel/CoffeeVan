@@ -14,8 +14,8 @@ public class InstantCoffee extends Coffee {
         this.typeOfInstantCoffee = typeOfInstantCoffee;
     }
 
-    public InstantCoffee(double mass, SortOfCoffee sort, String typeOfInstantCoffee) {
-        super(mass, sort);
+    public InstantCoffee(SortOfCoffee sort, String typeOfInstantCoffee) {
+        super(sort);
         this.typeOfInstantCoffee = typeOfInstantCoffee;
     }
 

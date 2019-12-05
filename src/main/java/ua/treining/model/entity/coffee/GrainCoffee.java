@@ -14,8 +14,8 @@ public class GrainCoffee extends Coffee {
         this.roastOfCoffee = roastOfCoffee;
     }
 
-    public GrainCoffee(double mass, SortOfCoffee sort, String roastOfCoffee) {
-        super(mass, sort);
+    public GrainCoffee(SortOfCoffee sort, String roastOfCoffee) {
+        super(sort);
         this.roastOfCoffee = roastOfCoffee;
     }
 }

@@ -5,23 +5,13 @@ package ua.treining.model.entity.coffee;
  */
 public class Coffee {
 
-    private double mass;
     private SortOfCoffee sort;
 
     public Coffee() {
     }
 
-    public Coffee(double mass, SortOfCoffee sort) {
-        this.mass = mass;
+    public Coffee(SortOfCoffee sort) {
         this.sort = sort;
-    }
-
-    public double getMass() {
-        return mass;
-    }
-
-    public void setMass(double mass) {
-        this.mass = mass;
     }
 
     public SortOfCoffee getSort() {
@@ -35,7 +25,6 @@ public class Coffee {
     @Override
     public String toString() {
         return "Coffee{" +
-                "mass=" + mass +
                 ", sort=" + sort +
                 '}';
     }

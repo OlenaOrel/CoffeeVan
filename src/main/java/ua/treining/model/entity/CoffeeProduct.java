@@ -18,7 +18,7 @@ public class CoffeeProduct {
 
     public CoffeeProduct(double price, Packaging packaging, Coffee coffee) {
         this.price = price;
-        productMass = packaging.getMass() + coffee.getMass();
+        productMass = packaging.massWithCoffee();
         this.packaging = packaging;
         this.coffee = coffee;
     }
@@ -63,6 +63,6 @@ public class CoffeeProduct {
 
     // calculate price of one kg coffee
     double priceOfOneKgCoffee() {
-        return (price * 1000) / coffee.getMass();
+        return (price * 1000) / packaging.getSize();
     }
 }

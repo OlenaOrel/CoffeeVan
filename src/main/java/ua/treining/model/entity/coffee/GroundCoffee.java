@@ -10,8 +10,8 @@ public class GroundCoffee extends Coffee {
     public GroundCoffee() {
     }
 
-    public GroundCoffee(double mass, SortOfCoffee sort, GrindingDegree grindingDegree) {
-        super(mass, sort);
+    public GroundCoffee(SortOfCoffee sort, GrindingDegree grindingDegree) {
+        super(sort);
         this.grindingDegree = grindingDegree;
     }
 
