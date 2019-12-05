@@ -2,6 +2,7 @@ package ua.treining.model;
 
 import ua.treining.model.entity.CoffeeProduct;
 import ua.treining.model.entity.CoffeeProductComparator;
+import ua.treining.model.entity.coffee.GrainCoffee;
 import ua.treining.model.entity.coffee.GroundCoffee;
 
 import java.util.List;
@@ -19,6 +20,15 @@ public class CoffeeVanUtility {
     public CoffeeProduct findGroundCoffee(List<CoffeeProduct> products) {
         for (CoffeeProduct coffee : products) {
             if (coffee.getCoffee() instanceof GroundCoffee) {
+                return coffee;
+            }
+        }
+        return null;
+    }
+
+    public CoffeeProduct findGrainCoffee(List<CoffeeProduct> products) {
+        for (CoffeeProduct coffee : products) {
+            if (coffee.getCoffee() instanceof GrainCoffee) {
                 return coffee;
             }
         }

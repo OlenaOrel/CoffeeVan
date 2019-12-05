@@ -55,4 +55,10 @@ public class CoffeeVanUtilityTest {
         CoffeeProduct result = utility.findGroundCoffee(products);
         assertEquals(groundCoffee, result);
     }
+
+    @Test
+    public void findGrainCoffeeTest() {
+        CoffeeProduct result = utility.findGrainCoffee(products);
+        assertEquals(grainCoffee, result);
+    }
 }
