@@ -49,4 +49,10 @@ public class CoffeeVanUtilityTest {
         assertEquals(firstElement, result.get(0));
         assertEquals(lastElement, result.get(result.size() - 1));
     }
+
+    @Test
+    public void findGroundCoffeeTest() {
+        CoffeeProduct result = utility.findGroundCoffee(products);
+        assertEquals(groundCoffee, result);
+    }
 }
