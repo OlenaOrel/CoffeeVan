@@ -5,32 +5,28 @@ package ua.treining.model.entity.coffee;
  */
 public class GroundCoffee extends Coffee {
 
-    private GrainCoffee grainCoffee;
+    private GrindingDegree grindingDegree;
 
     public GroundCoffee() {
     }
 
-    public GroundCoffee(GrainCoffee grainCoffee) {
-        this.grainCoffee = grainCoffee;
-    }
-
-    public GroundCoffee(double mass, SortOfCoffee sort, GrainCoffee grainCoffee) {
+    public GroundCoffee(double mass, SortOfCoffee sort, GrindingDegree grindingDegree) {
         super(mass, sort);
-        this.grainCoffee = grainCoffee;
+        this.grindingDegree = grindingDegree;
     }
 
-    public GrainCoffee getGrainCoffee() {
-        return grainCoffee;
+    public GrindingDegree getGrindingDegree() {
+        return grindingDegree;
     }
 
-    public void setGrainCoffee(GrainCoffee grainCoffee) {
-        this.grainCoffee = grainCoffee;
+    public void setGrindingDegree(GrindingDegree grindingDegree) {
+        this.grindingDegree = grindingDegree;
     }
 
     @Override
     public String toString() {
         return "GroundCoffee{" +
-                "grainCoffee=" + grainCoffee +
+                "grindingDegree=" + grindingDegree +
                 "} " + super.toString();
     }
 }

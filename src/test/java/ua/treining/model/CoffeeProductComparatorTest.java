@@ -9,6 +9,9 @@ import ua.treining.model.entity.coffee.SortOfCoffee;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Created by Olena Orel on 03.12.2019.
+ */
 public class CoffeeProductComparatorTest {
 
     private CoffeeProductComparator comparator = new CoffeeProductComparator();
