@@ -61,4 +61,16 @@ public class CoffeeVanUtilityTest {
         CoffeeProduct result = utility.findGrainCoffee(products);
         assertEquals(grainCoffee, result);
     }
+
+    @Test
+    public void findInstantCoffeeTest() {
+        CoffeeProduct result = utility.findInstantCoffee(products);
+        assertEquals(instantCoffee, result);
+    }
+
+    @Test
+    public void findCoffeeProductByTypeOfPackagingTest() {
+        CoffeeProduct result = utility.findCoffeeProductByTypeOfPackaging(products, Packaging.PACK_SMALL);
+        assertEquals(instantCoffee, result);
+    }
 }

@@ -2,8 +2,10 @@ package ua.treining.model;
 
 import ua.treining.model.entity.CoffeeProduct;
 import ua.treining.model.entity.CoffeeProductComparator;
+import ua.treining.model.entity.Packaging;
 import ua.treining.model.entity.coffee.GrainCoffee;
 import ua.treining.model.entity.coffee.GroundCoffee;
+import ua.treining.model.entity.coffee.InstantCoffee;
 
 import java.util.List;
 
@@ -34,5 +36,25 @@ public class CoffeeVanUtility {
         }
         return null;
     }
+
+    public CoffeeProduct findInstantCoffee(List<CoffeeProduct> products) {
+        for (CoffeeProduct coffee : products) {
+            if (coffee.getCoffee() instanceof InstantCoffee) {
+                return coffee;
+            }
+        }
+        return null;
+    }
+
+    public CoffeeProduct findCoffeeProductByTypeOfPackaging(List<CoffeeProduct> products, Packaging packaging) {
+        for (CoffeeProduct coffee : products) {
+            if (coffee.getPackaging().equals(packaging)) {
+                return coffee;
+            }
+        }
+        return null;
+    }
+
+
 
 }
