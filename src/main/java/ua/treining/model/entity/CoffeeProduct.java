@@ -4,6 +4,12 @@ package ua.treining.model.entity;
 import ua.treining.model.entity.coffee.Coffee;
 
 /**
+ * Class CoffeeProduct with parameters price, productMass
+ * packaging and coffee
+ * Coffee is a superclass
+ * @see Coffee
+ * @see Packaging
+ *
  * Created by Olena Orel on 03.12.2019.
  */
 public class CoffeeProduct {

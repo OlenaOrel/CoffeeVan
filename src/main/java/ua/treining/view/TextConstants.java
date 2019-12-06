@@ -1,6 +1,10 @@
 package ua.treining.view;
 
 /**
+ * Interface with text constants
+ * @see View
+ * @see ua.treining.controller.Controller
+ *
  * Created by Olena Orel on 03.12.2019.
  */
 public interface TextConstants {

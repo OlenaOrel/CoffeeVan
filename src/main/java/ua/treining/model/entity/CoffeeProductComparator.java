@@ -3,6 +3,7 @@ package ua.treining.model.entity;
 import java.util.Comparator;
 
 /**
+ * Class compere two coffeeProducts base on price and weight
  * Created by Olena Orel on 03.12.2019.
  */
 public class CoffeeProductComparator implements Comparator<CoffeeProduct> {

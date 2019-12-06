@@ -1,21 +1,39 @@
 package ua.treining.model.entity.coffee;
 
 /**
+ * Class Coffee with String parameter typeOfInstantCoffee
+ * InstantCoffee has a superclass
+ * @see Coffee
+ *
  * Created by Olena Orel on 03.12.2019.
  */
 public class InstantCoffee extends Coffee {
 
+    /**
+     * Parameter typeOfInstantCoffee
+     */
     private String typeOfInstantCoffee;
 
+    /**
+     * Constructor without parameter
+     */
     public InstantCoffee() {
     }
 
-    public InstantCoffee(String typeOfInstantCoffee) {
+    /** Constructor with sortOfCoffee parameter from superclass and roastOfCoffee parameter */
+    public InstantCoffee(SortOfCoffee sort, String typeOfInstantCoffee) {
+        super(sort);
         this.typeOfInstantCoffee = typeOfInstantCoffee;
     }
 
-    public InstantCoffee(SortOfCoffee sort, String typeOfInstantCoffee) {
-        super(sort);
+    /**
+     * getter, setter, toString
+     */
+    public String getTypeOfInstantCoffee() {
+        return typeOfInstantCoffee;
+    }
+
+    public void setTypeOfInstantCoffee(String typeOfInstantCoffee) {
         this.typeOfInstantCoffee = typeOfInstantCoffee;
     }
 
