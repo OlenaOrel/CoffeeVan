@@ -25,7 +25,7 @@ public class Coffee {
     @Override
     public String toString() {
         return "Coffee{" +
-                ", sort=" + sort +
+                "sort=" + sort +
                 '}';
     }
 }

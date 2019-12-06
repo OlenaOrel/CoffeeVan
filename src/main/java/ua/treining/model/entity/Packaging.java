@@ -4,12 +4,12 @@ package ua.treining.model.entity;
  * Created by Olena Orel on 03.12.2019.
  */
 public enum Packaging {
-    GLASS_SMALL(0.15, 0.05), GLASS_MEDIUM(0.25, 0.1), GLASS_LARGE(0.35, 0.2),
+    GLASS_SMALL(150, 50), GLASS_MEDIUM(250, 100), GLASS_LARGE(350, 200),
 
-    PACK_SMALL(0.01, 0.05), PACK_MEDIUM(0.015, 0.1), PACK_LARGE(0.02, 0.2);
+    PACK_SMALL(10, 50), PACK_MEDIUM(15, 100), PACK_LARGE(20, 200);
 
-    private final double mass;       //g
-    private final double size;
+    private final double mass;      //g
+    private final double size;      //g
 
     Packaging(double mass, double size) {
         this.mass = mass;

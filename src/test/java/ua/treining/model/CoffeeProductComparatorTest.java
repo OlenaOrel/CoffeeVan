@@ -15,9 +15,9 @@ import static org.junit.Assert.assertEquals;
 public class CoffeeProductComparatorTest {
 
     private CoffeeProductComparator comparator = new CoffeeProductComparator();
-    private CoffeeProduct product1 = new CoffeeProduct(100, Packaging.GLASS_LARGE, new Coffee(200, SortOfCoffee.ARABICA));
-    private CoffeeProduct product2 = new CoffeeProduct(85, Packaging.PACK_LARGE, new Coffee(200, SortOfCoffee.ARABICA));
-    private CoffeeProduct product3 = new CoffeeProduct(85, Packaging.PACK_LARGE, new Coffee(200, SortOfCoffee.ARABICA));
+    private CoffeeProduct product1 = new CoffeeProduct(100, Packaging.GLASS_LARGE, new Coffee(SortOfCoffee.ARABICA));
+    private CoffeeProduct product2 = new CoffeeProduct(85, Packaging.PACK_LARGE, new Coffee(SortOfCoffee.ARABICA));
+    private CoffeeProduct product3 = new CoffeeProduct(85, Packaging.PACK_LARGE, new Coffee(SortOfCoffee.ARABICA));
 
     @Test
     public void testCompareLess() {

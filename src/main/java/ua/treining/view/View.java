@@ -20,7 +20,7 @@ public class View {
                     new Locale("en"));        // English
 
     public void printMessage(String message) {
-        System.out.println(message);
+        System.out.println(bundle.getString(message));
     }
 
     public void printProductList(List<CoffeeProduct> products) {

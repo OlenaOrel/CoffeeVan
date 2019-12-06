@@ -12,5 +12,6 @@ public interface TextConstants {
     String FOUND_INSTANT_COFFEE = "output.string.instant.coffee";
     String FOUND_PRODUCT_IN_GLASS_PACKAGE = "output.string.glass.packaging";
     String FOUND_PRODUCT_IN_PACK = "output.string.pack";
+    String DELIMITER = "output.string.delimiter";
 
 }

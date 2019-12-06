@@ -28,14 +28,14 @@ public class CoffeeVanUtilityTest {
     @BeforeClass
     public static void before() {
         utility = new CoffeeVanUtility();
-        firstElement = new CoffeeProduct(75, Packaging.PACK_LARGE, new Coffee(200, SortOfCoffee.ARABICA));
-        lastElement = new CoffeeProduct(180, Packaging.GLASS_LARGE, new Coffee(100, SortOfCoffee.ARABICA));
-        instantCoffee = new CoffeeProduct(45, Packaging.PACK_SMALL, new InstantCoffee(50, SortOfCoffee.ARABICA, "granular"));
-        grainCoffee = new CoffeeProduct(105, Packaging.PACK_LARGE, new GrainCoffee(200, SortOfCoffee.CANEPHORA, "French"));
-        groundCoffee = new CoffeeProduct(125, Packaging.GLASS_LARGE, new GroundCoffee(200, SortOfCoffee.ARABICA, GrindingDegree.MEDIUM_GRIND));
-        products.add(new CoffeeProduct(120, Packaging.GLASS_MEDIUM, new Coffee(100, SortOfCoffee.CANEPHORA)));
-        products.add(new CoffeeProduct(60, Packaging.GLASS_SMALL, new Coffee(50, SortOfCoffee.ARABICA)));
-        products.add(new CoffeeProduct(80, Packaging.PACK_MEDIUM, new Coffee(100, SortOfCoffee.CANEPHORA)));
+        firstElement = new CoffeeProduct(75, Packaging.PACK_LARGE, new Coffee(SortOfCoffee.ARABICA));
+        lastElement = new CoffeeProduct(180, Packaging.GLASS_MEDIUM, new Coffee(SortOfCoffee.ARABICA));
+        instantCoffee = new CoffeeProduct(45, Packaging.PACK_SMALL, new InstantCoffee(SortOfCoffee.ARABICA, "granular"));
+        grainCoffee = new CoffeeProduct(105, Packaging.PACK_LARGE, new GrainCoffee(SortOfCoffee.CANEPHORA, "French"));
+        groundCoffee = new CoffeeProduct(125, Packaging.GLASS_LARGE, new GroundCoffee(SortOfCoffee.ARABICA, GrindingDegree.MEDIUM_GRIND));
+        products.add(new CoffeeProduct(120, Packaging.GLASS_MEDIUM, new Coffee(SortOfCoffee.CANEPHORA)));
+        products.add(new CoffeeProduct(60, Packaging.GLASS_SMALL, new Coffee(SortOfCoffee.ARABICA)));
+        products.add(new CoffeeProduct(80, Packaging.PACK_MEDIUM, new Coffee(SortOfCoffee.CANEPHORA)));
         products.add(grainCoffee);
         products.add(instantCoffee);
         products.add(groundCoffee);
