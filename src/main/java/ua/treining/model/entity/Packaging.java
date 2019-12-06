@@ -12,15 +12,15 @@ public enum Packaging {
     /**
      * Parameter mass
      */
-    private final double mass;      //g
+    private final int mass;      //g
 
     /**
      * Parameter size
      */
-    private final double size;      //g
+    private final int size;      //g
 
     /** Constructor with parameters: mass, size */
-    Packaging(double mass, double size) {
+    Packaging(int mass, int size) {
         this.mass = mass;
         this.size = size;
     }
@@ -29,16 +29,16 @@ public enum Packaging {
      * @see CoffeeProduct
      * @return mass+size
      */
-    public double massWithCoffee() {
+    public int massWithCoffee() {
         return mass + size;
     }
 
     //getters
-    public double getMass() {
+    public int getMass() {
         return mass;
     }
 
-    public double getSize() {
+    public int getSize() {
         return size;
     }
 }

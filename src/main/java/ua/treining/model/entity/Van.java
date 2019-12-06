@@ -8,13 +8,13 @@ import java.util.List;
 public class Van {
 
     private int vanSize;
-    private double amountOfMoney;
+    private int amountOfMoney;
     private List<CoffeeProduct> products;
 
     public Van() {
     }
 
-    public Van(int vanSize, double amountOfMoney, List<CoffeeProduct> products) {
+    public Van(int vanSize, int amountOfMoney, List<CoffeeProduct> products) {
         this.vanSize = vanSize;
         this.amountOfMoney = amountOfMoney;
         this.products = products;
@@ -28,11 +28,11 @@ public class Van {
         this.vanSize = vanSize;
     }
 
-    public double getAmountOfMoney() {
+    public int getAmountOfMoney() {
         return amountOfMoney;
     }
 
-    public void setAmountOfMoney(double amountOfMoney) {
+    public void setAmountOfMoney(int amountOfMoney) {
         this.amountOfMoney = amountOfMoney;
     }
 

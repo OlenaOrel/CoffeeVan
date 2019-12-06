@@ -14,30 +14,30 @@ import ua.treining.model.entity.coffee.Coffee;
  */
 public class CoffeeProduct {
 
-    private double price;
-    private double productMass;
+    private int price;
+    private int productMass;
     private Packaging packaging;
     private Coffee coffee;
 
     public CoffeeProduct() {
     }
 
-    public CoffeeProduct(double price, Packaging packaging, Coffee coffee) {
+    public CoffeeProduct(int price, Packaging packaging, Coffee coffee) {
         this.price = price;
         productMass = packaging.massWithCoffee();
         this.packaging = packaging;
         this.coffee = coffee;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public double getProductMass() {
+    public int getProductMass() {
         return productMass;
     }
 
@@ -68,7 +68,7 @@ public class CoffeeProduct {
     }
 
     // calculate price of one kg coffee
-    double priceOfOneKgCoffee() {
+    int priceOfOneKgCoffee() {
         return (price * 1000) / packaging.getSize();
     }
 }
