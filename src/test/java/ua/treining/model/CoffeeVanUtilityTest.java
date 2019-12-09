@@ -52,25 +52,25 @@ public class CoffeeVanUtilityTest {
 
     @Test
     public void findGroundCoffeeTest() {
-        CoffeeProduct result = utility.findGroundCoffee(products);
-        assertEquals(groundCoffee, result);
+        List<CoffeeProduct> result = utility.findGroundCoffee(products);
+        assertEquals(groundCoffee, result.get(0));
     }
 
     @Test
     public void findGrainCoffeeTest() {
-        CoffeeProduct result = utility.findGrainCoffee(products);
-        assertEquals(grainCoffee, result);
+        List<CoffeeProduct> result = utility.findGrainCoffee(products);
+        assertEquals(grainCoffee, result.get(0));
     }
 
     @Test
     public void findInstantCoffeeTest() {
-        CoffeeProduct result = utility.findInstantCoffee(products);
-        assertEquals(instantCoffee, result);
+        List<CoffeeProduct> result = utility.findInstantCoffee(products);
+        assertEquals(instantCoffee, result.get(0));
     }
 
     @Test
     public void findCoffeeProductByTypeOfPackagingTest() {
-        CoffeeProduct result = utility.findCoffeeProductByTypeOfPackaging(products, Packaging.PACK_SMALL);
-        assertEquals(instantCoffee, result);
+        List<CoffeeProduct> result = utility.findCoffeeProductByTypeOfPackaging(products, Packaging.PACK_SMALL);
+        assertEquals(instantCoffee, result.get(0));
     }
 }

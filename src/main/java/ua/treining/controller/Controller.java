@@ -38,31 +38,31 @@ public class Controller {
 
     private void getAndOutputCoffeeInPack() {
         view.printMessage(TextConstants.FOUND_PRODUCT_IN_PACK);
-        view.printProduct(utility.findCoffeeProductByTypeOfPackaging(van.getProducts(), Packaging.PACK_MEDIUM));
+        view.printProductList(utility.findCoffeeProductByTypeOfPackaging(van.getProducts(), Packaging.PACK_MEDIUM));
         view.printMessage(TextConstants.DELIMITER);
     }
 
     private void getAndOutputCoffeeInGlassPack() {
         view.printMessage(TextConstants.FOUND_PRODUCT_IN_GLASS_PACKAGE);
-        view.printProduct(utility.findCoffeeProductByTypeOfPackaging(van.getProducts(), Packaging.GLASS_MEDIUM));
+        view.printProductList(utility.findCoffeeProductByTypeOfPackaging(van.getProducts(), Packaging.GLASS_MEDIUM));
         view.printMessage(TextConstants.DELIMITER);
     }
 
     private void getAndOutputInstantCoffee() {
         view.printMessage(TextConstants.FOUND_INSTANT_COFFEE);
-        view.printProduct(utility.findInstantCoffee(van.getProducts()));
+        view.printProductList(utility.findInstantCoffee(van.getProducts()));
         view.printMessage(TextConstants.DELIMITER);
     }
 
     private void getAndOutputGroundCoffee() {
         view.printMessage(TextConstants.FOUND_GROUND_COFFEE);
-        view.printProduct(utility.findGroundCoffee(van.getProducts()));
+        view.printProductList(utility.findGroundCoffee(van.getProducts()));
         view.printMessage(TextConstants.DELIMITER);
     }
 
     private void getAndOutputGrainCoffee() {
         view.printMessage(TextConstants.FOUND_GRAIN_COFFEE);
-        view.printProduct(utility.findGrainCoffee(van.getProducts()));
+        view.printProductList(utility.findGrainCoffee(van.getProducts()));
         view.printMessage(TextConstants.DELIMITER);
     }
 

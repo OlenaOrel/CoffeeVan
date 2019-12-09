@@ -68,7 +68,7 @@ public class CoffeeProduct {
     }
 
     // calculate price of one kg coffee
-    int priceOfOneKgCoffee() {
+    public int priceOfOneKgCoffee() {
         return (price * 1000) / packaging.getSize();
     }
 }
