@@ -1,8 +1,8 @@
-package ua.treining;
+package ua.treining.version_1;
 
-import ua.treining.controller.Controller;
-import ua.treining.model.CoffeeVanUtility;
-import ua.treining.view.View;
+import ua.treining.version_1.controller.Controller;
+import ua.treining.version_1.model.CoffeeVanUtility;
+import ua.treining.version_1.view.View;
 
 /**
  * Created by Olena Orel on 03.12.2019.

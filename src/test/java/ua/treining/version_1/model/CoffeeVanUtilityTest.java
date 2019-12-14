@@ -1,10 +1,10 @@
-package ua.treining.model;
+package ua.treining.version_1.model;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import ua.treining.model.entity.CoffeeProduct;
-import ua.treining.model.entity.Packaging;
-import ua.treining.model.entity.coffee.*;
+import ua.treining.version_1.model.entity.CoffeeProduct;
+import ua.treining.version_1.model.entity.Packaging;
+import ua.treining.version_1.model.entity.coffee.*;
 
 import java.util.ArrayList;
 import java.util.List;

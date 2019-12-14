@@ -1,7 +1,7 @@
-package ua.treining.model.entity;
+package ua.treining.version_1.model.entity;
 
 
-import ua.treining.model.entity.coffee.Coffee;
+import ua.treining.version_1.model.entity.coffee.Coffee;
 
 /**
  * Class CoffeeProduct with parameters price, productMass

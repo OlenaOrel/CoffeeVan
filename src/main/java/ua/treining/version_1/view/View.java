@@ -1,6 +1,6 @@
-package ua.treining.view;
+package ua.treining.version_1.view;
 
-import ua.treining.model.entity.CoffeeProduct;
+import ua.treining.version_1.model.entity.CoffeeProduct;
 
 import java.util.List;
 import java.util.Locale;
@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
  * Class View has a static parameter MESSAGES_BUNDLE_NAME and
  * static final parameter ResourceBundle type bundle
  * This class output messages in two languages to console
- * @see ua.treining.controller.Controller
+ * @see ua.treining.version_1.controller.Controller
  * Created by Olena Orel on 03.12.2019.
  */
 public class View {
@@ -27,15 +27,15 @@ public class View {
      * Method outputs message
      *
      * @param message String message
-     * @see ua.treining.controller.Controller
+     * @see ua.treining.version_1.controller.Controller
      */
     public void printMessage(String message) {
         System.out.println(bundle.getString(message));
     }
 
     /** Method output list parameters
-     *  @see ua.treining.controller.Controller
-     *  @see ua.treining.model.entity.Van */
+     *  @see ua.treining.version_1.controller.Controller
+     *  @see ua.treining.version_1.model.entity.Van */
     public void printProductList(List<CoffeeProduct> products) {
         for (CoffeeProduct coffee : products) {
             System.out.println(coffee.toString());

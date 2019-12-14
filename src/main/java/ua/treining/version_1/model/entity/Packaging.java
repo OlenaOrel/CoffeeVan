@@ -1,4 +1,4 @@
-package ua.treining.model.entity;
+package ua.treining.version_1.model.entity;
 
 /**
  * Enum Packaging has parameters mass and size of package

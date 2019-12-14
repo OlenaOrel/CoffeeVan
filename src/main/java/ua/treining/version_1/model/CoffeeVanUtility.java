@@ -1,10 +1,10 @@
-package ua.treining.model;
+package ua.treining.version_1.model;
 
-import ua.treining.model.entity.CoffeeProduct;
-import ua.treining.model.entity.Packaging;
-import ua.treining.model.entity.coffee.GrainCoffee;
-import ua.treining.model.entity.coffee.GroundCoffee;
-import ua.treining.model.entity.coffee.InstantCoffee;
+import ua.treining.version_1.model.entity.CoffeeProduct;
+import ua.treining.version_1.model.entity.Packaging;
+import ua.treining.version_1.model.entity.coffee.GrainCoffee;
+import ua.treining.version_1.model.entity.coffee.GroundCoffee;
+import ua.treining.version_1.model.entity.coffee.InstantCoffee;
 
 import java.util.Comparator;
 import java.util.List;

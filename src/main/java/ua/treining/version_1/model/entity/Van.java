@@ -1,4 +1,4 @@
-package ua.treining.model.entity;
+package ua.treining.version_1.model.entity;
 
 import java.util.List;
 

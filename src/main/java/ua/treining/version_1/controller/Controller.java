@@ -1,12 +1,12 @@
-package ua.treining.controller;
+package ua.treining.version_1.controller;
 
-import ua.treining.model.CoffeeVanUtility;
-import ua.treining.model.entity.CoffeeProduct;
-import ua.treining.model.entity.Packaging;
-import ua.treining.model.entity.Van;
-import ua.treining.model.entity.coffee.*;
-import ua.treining.view.TextConstants;
-import ua.treining.view.View;
+import ua.treining.version_1.model.CoffeeVanUtility;
+import ua.treining.version_1.model.entity.CoffeeProduct;
+import ua.treining.version_1.model.entity.Packaging;
+import ua.treining.version_1.model.entity.Van;
+import ua.treining.version_1.model.entity.coffee.*;
+import ua.treining.version_1.view.TextConstants;
+import ua.treining.version_1.view.View;
 
 import java.util.ArrayList;
 import java.util.List;

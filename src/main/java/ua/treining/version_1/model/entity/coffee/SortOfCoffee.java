@@ -1,4 +1,4 @@
-package ua.treining.model.entity.coffee;
+package ua.treining.version_1.model.entity.coffee;
 
 /**
  * Enum SortOfCoffee

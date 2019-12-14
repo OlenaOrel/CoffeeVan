@@ -1,9 +1,9 @@
-package ua.treining.view;
+package ua.treining.version_1.view;
 
 /**
  * Interface with text constants
  * @see View
- * @see ua.treining.controller.Controller
+ * @see ua.treining.version_1.controller.Controller
  *
  * Created by Olena Orel on 03.12.2019.
  */
