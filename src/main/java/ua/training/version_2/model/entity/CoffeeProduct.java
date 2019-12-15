@@ -1,11 +1,11 @@
-package ua.training.version_2.model.entities;
+package ua.training.version_2.model.entity;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import ua.training.version_2.model.entities.coffee.Coffee;
-import ua.training.version_2.model.entities.packaging.Packaging;
+import ua.training.version_2.model.entity.coffee.Coffee;
+import ua.training.version_2.model.entity.packaging.Packaging;
 
 import java.math.BigDecimal;
 
@@ -34,7 +34,8 @@ public class CoffeeProduct {
 
     // calculate price of one kg coffee
     public BigDecimal priceOfOneKgCoffee() {
-        return BigDecimal.valueOf((price.doubleValue() * 1000) / packaging.size());
+        int oneKgTog = 1000;
+        return BigDecimal.valueOf((price.doubleValue() * oneKgTog) / packaging.size());
     }
 
     private int calculateProductMass() {

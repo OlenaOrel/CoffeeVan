@@ -1,4 +1,4 @@
-package ua.training.version_2.model.entities.packaging;
+package ua.training.version_2.model.entity.packaging;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -12,12 +12,12 @@ import lombok.ToString;
 @Setter
 @EqualsAndHashCode
 @ToString
-public class GlassPackage implements Packaging {
+public class Pack implements Packaging {
 
     int mass;
     int size;
 
-    public GlassPackage(int mass, int size) {
+    public Pack(int mass, int size) {
         checkParameters(mass, size);
         this.mass = mass;
         this.size = size;

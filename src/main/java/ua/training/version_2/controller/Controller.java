@@ -1,14 +1,14 @@
 package ua.training.version_2.controller;
 
 import ua.training.version_2.model.CoffeeVanUtility;
-import ua.training.version_2.model.entities.CoffeeProduct;
-import ua.training.version_2.model.entities.Van;
-import ua.training.version_2.model.entities.coffee.Coffee;
-import ua.training.version_2.model.entities.coffee.GrainCoffee;
-import ua.training.version_2.model.entities.coffee.GroundCoffee;
-import ua.training.version_2.model.entities.coffee.InstantCoffee;
-import ua.training.version_2.model.entities.packaging.GlassPackage;
-import ua.training.version_2.model.entities.packaging.Pack;
+import ua.training.version_2.model.entity.CoffeeProduct;
+import ua.training.version_2.model.entity.Van;
+import ua.training.version_2.model.entity.coffee.Coffee;
+import ua.training.version_2.model.entity.coffee.GrainCoffee;
+import ua.training.version_2.model.entity.coffee.GroundCoffee;
+import ua.training.version_2.model.entity.coffee.InstantCoffee;
+import ua.training.version_2.model.entity.packaging.GlassPackage;
+import ua.training.version_2.model.entity.packaging.Pack;
 import ua.training.version_2.view.TextConstants;
 import ua.training.version_2.view.View;
 
@@ -17,6 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Created by Olena Orel on 14.12.2019.
+ */
 public class Controller {
 
     private Van van = new Van(6000, 2200, new ArrayList<>());

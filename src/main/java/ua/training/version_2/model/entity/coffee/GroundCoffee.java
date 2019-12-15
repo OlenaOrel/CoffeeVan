@@ -1,5 +1,4 @@
-package ua.training.version_2.model.entities.coffee;
-
+package ua.training.version_2.model.entity.coffee;
 
 import lombok.*;
 
@@ -12,16 +11,15 @@ import lombok.*;
 @Setter
 @EqualsAndHashCode
 @ToString
-public class GrainCoffee implements Coffee {
+public class GroundCoffee implements Coffee {
 
     private SortOfCoffee sortOfCoffee;
-    private Roast roast;
+    private GrindingDegree degree;
 
-    public enum Roast {CINNAMON, LIGHT, AMERICAN, CITY, FULL_CITY}
+    public enum GrindingDegree {PULVERIZED, FINE_GRIND, MEDIUM_GRIND, COURSE_GRIND}
 
     @Override
     public SortOfCoffee sort() {
         return getSortOfCoffee();
     }
-
 }

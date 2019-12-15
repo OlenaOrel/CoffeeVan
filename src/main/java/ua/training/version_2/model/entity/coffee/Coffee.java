@@ -1,4 +1,4 @@
-package ua.training.version_2.model.entities.coffee;
+package ua.training.version_2.model.entity.coffee;
 
 
 /**

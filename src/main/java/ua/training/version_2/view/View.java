@@ -1,11 +1,14 @@
 package ua.training.version_2.view;
 
-import ua.training.version_2.model.entities.CoffeeProduct;
+import ua.training.version_2.model.entity.CoffeeProduct;
 
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * Created by Olena Orel on 14.12.2019.
+ */
 public class View {
 
     // Resource Bundle Installation's
@@ -39,9 +42,8 @@ public class View {
      *
      * @param product CoffeeProduct
      */
-    public void printProduct(CoffeeProduct product) {
+    private void printProduct(CoffeeProduct product) {
         System.out.println(product.toString());
     }
-
 
 }
