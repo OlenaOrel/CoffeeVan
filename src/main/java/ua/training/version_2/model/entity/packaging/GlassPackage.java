@@ -14,6 +14,8 @@ import lombok.ToString;
 @ToString
 public class GlassPackage implements Packaging {
 
+    private final double glassThickness = 1.5;
+
     int mass;
     int size;
 

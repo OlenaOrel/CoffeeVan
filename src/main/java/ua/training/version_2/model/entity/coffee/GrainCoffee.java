@@ -12,7 +12,7 @@ import lombok.*;
 @Setter
 @EqualsAndHashCode
 @ToString
-public class GrainCoffee implements Coffee {
+public class GrainCoffee extends Coffee {
 
     private SortOfCoffee sortOfCoffee;
     private Roast roast;

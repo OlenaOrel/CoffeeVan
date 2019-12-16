@@ -4,7 +4,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import ua.training.version_2.model.CoffeeVanUtility;
 import ua.training.version_2.model.entity.CoffeeProduct;
-import ua.training.version_2.model.entity.coffee.Coffee;
+import ua.training.version_2.model.entity.coffee.CoffeeImpl;
 import ua.training.version_2.model.entity.coffee.GrainCoffee;
 import ua.training.version_2.model.entity.coffee.GroundCoffee;
 import ua.training.version_2.model.entity.coffee.InstantCoffee;
@@ -29,9 +29,9 @@ public class CoffeeVanUtilityTest {
     private static List<CoffeeProduct> groundCoffee = new ArrayList<>();
     private static Packaging glassPackage;
     private static Packaging pack;
-    private static Coffee instant;
-    private static Coffee ground;
-    private static Coffee grain;
+    private static CoffeeImpl instant;
+    private static CoffeeImpl ground;
+    private static CoffeeImpl grain;
 
     @BeforeClass
     public static void before() {
@@ -40,14 +40,14 @@ public class CoffeeVanUtilityTest {
         glassPackage = new GlassPackage(150, 50);
         pack = new Pack(15, 50);
 
-        firstElement = new CoffeeProduct(new InstantCoffee(Coffee.SortOfCoffee.ARABICA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED),
+        firstElement = new CoffeeProduct(new InstantCoffee(CoffeeImpl.SortOfCoffee.ARABICA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED),
                 pack, new BigDecimal(30.0));
-        lastElement = new CoffeeProduct(new GroundCoffee(Coffee.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND),
+        lastElement = new CoffeeProduct(new GroundCoffee(CoffeeImpl.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND),
                 glassPackage, new BigDecimal(150.0));
 
-        instant = new InstantCoffee(Coffee.SortOfCoffee.ARABICA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED);
-        ground = new GroundCoffee(Coffee.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND);
-        grain = new GrainCoffee(Coffee.SortOfCoffee.ARABICA, GrainCoffee.Roast.AMERICAN);
+        instant = new InstantCoffee(CoffeeImpl.SortOfCoffee.ARABICA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED);
+        ground = new GroundCoffee(CoffeeImpl.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND);
+        grain = new GrainCoffee(CoffeeImpl.SortOfCoffee.ARABICA, GrainCoffee.Roast.AMERICAN);
 
         grainCoffee.add(new CoffeeProduct(grain, glassPackage, new BigDecimal(70)));
         grainCoffee.add(new CoffeeProduct(grain, pack, new BigDecimal(80.0)));

@@ -11,7 +11,7 @@ import lombok.*;
 @Setter
 @EqualsAndHashCode
 @ToString
-public class GroundCoffee implements Coffee {
+public class GroundCoffee extends Coffee {
 
     private SortOfCoffee sortOfCoffee;
     private GrindingDegree degree;

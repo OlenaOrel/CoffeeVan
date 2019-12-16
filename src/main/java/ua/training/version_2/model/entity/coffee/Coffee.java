@@ -1,13 +1,37 @@
 package ua.training.version_2.model.entity.coffee;
 
 
-/**
- * Created by Olena Orel on 14.12.2019.
- */
-public interface Coffee {
+public abstract class Coffee implements CoffeeImpl {
 
-    enum SortOfCoffee {ARABICA, CANEPHORA}
+    private SortOfCoffee sort;
 
-    SortOfCoffee sort();
+    @Override
+    public SortOfCoffee sort() {
+        return null;
+    }
 
+    public Coffee() {
+    }
+
+    public Coffee(SortOfCoffee sort) {
+        this.sort = sort;
+    }
+
+    /**
+     * getter, setter, toString
+     */
+    public SortOfCoffee getSort() {
+        return sort;
+    }
+
+    public void setSort(SortOfCoffee sort) {
+        this.sort = sort;
+    }
+
+    @Override
+    public String toString() {
+        return "Coffee{" +
+                "sort=" + sort +
+                '}';
+    }
 }

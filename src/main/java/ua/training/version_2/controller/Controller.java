@@ -3,7 +3,7 @@ package ua.training.version_2.controller;
 import ua.training.version_2.model.CoffeeVanUtility;
 import ua.training.version_2.model.entity.CoffeeProduct;
 import ua.training.version_2.model.entity.Van;
-import ua.training.version_2.model.entity.coffee.Coffee;
+import ua.training.version_2.model.entity.coffee.CoffeeImpl;
 import ua.training.version_2.model.entity.coffee.GrainCoffee;
 import ua.training.version_2.model.entity.coffee.GroundCoffee;
 import ua.training.version_2.model.entity.coffee.InstantCoffee;
@@ -105,14 +105,14 @@ public class Controller {
         GlassPackage glass100 = new GlassPackage(250, 100);
         GlassPackage glass200 = new GlassPackage(370, 200);
 
-        Coffee grainAr = new GrainCoffee(Coffee.SortOfCoffee.ARABICA, GrainCoffee.Roast.AMERICAN);
-        Coffee grainC = new GrainCoffee(Coffee.SortOfCoffee.CANEPHORA, GrainCoffee.Roast.AMERICAN);
+        CoffeeImpl grainAr = new GrainCoffee(CoffeeImpl.SortOfCoffee.ARABICA, GrainCoffee.Roast.AMERICAN);
+        CoffeeImpl grainC = new GrainCoffee(CoffeeImpl.SortOfCoffee.CANEPHORA, GrainCoffee.Roast.AMERICAN);
 
-        Coffee groundA = new GroundCoffee(Coffee.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND);
-        Coffee groundC = new GroundCoffee(Coffee.SortOfCoffee.CANEPHORA, GroundCoffee.GrindingDegree.FINE_GRIND);
+        CoffeeImpl groundA = new GroundCoffee(CoffeeImpl.SortOfCoffee.ARABICA, GroundCoffee.GrindingDegree.COURSE_GRIND);
+        CoffeeImpl groundC = new GroundCoffee(CoffeeImpl.SortOfCoffee.CANEPHORA, GroundCoffee.GrindingDegree.FINE_GRIND);
 
-        Coffee instantA = new InstantCoffee(Coffee.SortOfCoffee.CANEPHORA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED);
-        Coffee instantP = new InstantCoffee(Coffee.SortOfCoffee.CANEPHORA, InstantCoffee.TypeOfInstantCoffee.POWDERED);
+        CoffeeImpl instantA = new InstantCoffee(CoffeeImpl.SortOfCoffee.CANEPHORA, InstantCoffee.TypeOfInstantCoffee.AGGLOMERATED);
+        CoffeeImpl instantP = new InstantCoffee(CoffeeImpl.SortOfCoffee.CANEPHORA, InstantCoffee.TypeOfInstantCoffee.POWDERED);
 
         tmp.add(new CoffeeProduct(grainAr, glass50, new BigDecimal(60.0)));
         tmp.add(new CoffeeProduct(grainC, pack50, new BigDecimal(55.0)));
