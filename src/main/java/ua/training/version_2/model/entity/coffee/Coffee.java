@@ -7,7 +7,7 @@ public abstract class Coffee implements CoffeeImpl {
 
     @Override
     public SortOfCoffee sort() {
-        return null;
+        return getSort();
     }
 
     public Coffee() {
